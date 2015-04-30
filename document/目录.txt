@@ -1,0 +1,114 @@
+# 框架目录
+Project
+-- app # 项目应用目录
+---- Commands # 命令目录
+---- Console # 
+---- Events # 事件目录
+---- Exceptions
+---- Handlers
+------ Commands
+------ Events
+---- Http # 控制目录
+------ Controllers # 控制器目录
+-------- Admin # 后台目录
+---------- ArticleController.php # 文章模块
+---------- CategoriesController.php # 文章分类模块
+---------- DashboardController.php # 首页控制器模块
+---------- GroupsController.php # 分组模块
+---------- PermissionsController.php # 权限模块
+---------- SeoController.php # Seo模块
+---------- UsersController.php # 用户模块
+-------- Auth # 认证目录
+---------- AuthController.php # 认证模块
+---------- PasswordController.php # 密码模块
+-------- Helper # 辅助目录
+---------- ExeclController.php # Execl模块
+---------- UploadController.php # 上传模块
+-------- Home # 前台目录
+---------- IndexController.php # 首页模块
+---------- NewsController.php # 新闻模块
+---------- PageController.php # 页面模块
+---------- ProductController.php # 产品模块
+-------- AdminController.php # 后台基类控制器
+-------- Controller.php # 控制器基类
+-------- HomeController.php # 前台基类控制器
+------ Middleware # 路由过滤中间件目录
+------ Requests # Form过滤中间件目录
+------ Kernel.php # 中间件自动加载器
+------ routes.php # 控制器路由文件
+---- Models # 数据视图目录
+------ User.php # 用户数据视图
+---- Providers # 服务提供者
+---- Repositories # 行为事务逻辑处理
+---- Services # 自定义封装类库
+
+-- bootstarp
+---- app.php
+---- autoload.php
+
+-- config # 配置目录
+---- app.php # 运行设置
+---- auth.php # 认证设置
+---- cache.php # 缓存设置
+---- compile.php
+---- database.php # 数据库设置
+---- filesystems.php # 文件系统设置
+---- mail.php # 邮件设置
+---- queue.php # 队列设置
+---- services.php # 自动加载服务设置
+---- session.php
+---- view.php
+
+-- database # 数据迁移目录
+---- migrations # 生成数据库结构目录
+------ 2015_04_18_020310_create_users_table.php # 用户表结构
+------ 2015_04_18_021810_create_articles_table.php # 文章表结构
+------ 2015_04_18_022017_create_categories_table.php # 分类表结构
+------ 2015_04_18_030822_create_comments_table.php # 评论表结构
+---- seeds # 迁移数据目录
+------ DatabaseSeeder.php # 迁移数据视回调
+------ UserTableSeeder.php # 用户迁移数据
+
+-- document # 文档目录
+---- 开发规范.txt # 项目开发规范
+---- 操作.txt # 操作日志
+---- 服务器配置.txt # 服务器配置说明
+---- 目录.txt # 项目目录文件说明
+---- 索引.xml # 数据库索引说明
+
+-- public # 项目对外目录
+---- assets # 用户资源目录
+------ avatars # 头像目录
+------ css # 用户自定义Css目录
+------ fonts # 用户自定义字体目录
+------ images # 用户静态图像目录
+------ javascript # 用户自定义Js目录
+---- plug-in # 第三方插件目录
+------ bootstrap # 前端框架BootStrap 3插件(Version: 3.3.4)
+------ font-awesome # 前端字体图标插件(Version: 4.3.0)
+------ jquery # 前端jQuery框架(Version: 1.11.1 and 1.8.3)
+------ My97DatePicker # 前端日期选择控件
+------ somethings # 其他一些常用类库
+-------- jquery.cookie.js # jQuery Cookie 插件
+---- upload # 上传目录
+------ files # 上传图片目录
+------ photos # 上传文件目录
+---- .htaccess # 网站重写规则文件
+---- favicon.ico # 网站 Logo ico
+---- index.php # 网站统一路口文件
+---- robots.txt # Seo控制文件
+
+-- resources # 模板资源目录
+---- assets # 静态资源目录
+---- lang # 语言包目录
+------ en # 英文语言包
+------ zh-CN # 中文简体语言包
+---- view # 模板视图目录
+
+-- storage # 运行日志目录包含编译后的 Blade 模板、基于文件的 session、文件缓存和其他框架产生的文件
+-- tests # 自动化测试
+-- vendor #  Composer 依赖模块
+-- .env # 版本控制统一配置文件
+-- artisan 
+-- composer.json
+-- server.php

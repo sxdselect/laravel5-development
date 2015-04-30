@@ -1,0 +1,32 @@
+# 安装框架
+composer create-project laravel/laravel --prefer-dist
+
+# 新建数据视图(/app/Models)
+命名空间统一: namespace App\Models;
+
+# 安装框架插件
+laravelcollective/html
+https://packagist.org/packages/laravelcollective/html
+http://laravelcollective.com/docs/5.0/html
+
+语言包
+https://github.com/caouecs/Laravel-lang
+
+# 前端文件
+Bootstarp 3.3.4 
+http://v3.bootcss.com/
+
+Font Awesome 4.3.0
+http://fontawesome.io/
+
+jQuery 1.11.2
+http://jquery.com/
+
+UEditor 1.4.3 PHP UTF-8 开发版
+http://ueditor.baidu.com/website/
+
+AdminLTE 2.0.4
+https://almsaeedstudio.com/
+
+ionicons
+http://ionicons.com/

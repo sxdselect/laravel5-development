@@ -1,0 +1,16 @@
+<index>
+	<table>表名 如:product</table>
+	<name>索引名 如:idx_pro_partid_pid</name>
+	<fields>字段列表 如:partid, pid</fields>
+	<type>索引类型 如:(PRIMARY,UNIQUE,FULLTEXT,INDEX)</type>
+	<ddl>ALTER TABLE..</ddl>
+	<remark>
+		索引名的命名规范: 索引前缀_表名前缀_字段1_字段2......
+		其中索引前缀如下:
+		PRIMARY 可省略，如果不省略使用  pri_
+		UNIQUE :   uni_
+		FULLTEXT : full_
+		普通索引 : idx_
+	</remark>
+	<author>某某同事 2013-3-25</author>
+</index>

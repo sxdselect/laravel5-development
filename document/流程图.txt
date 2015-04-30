@@ -1,0 +1,12 @@
+Browser(浏览器) # http url
+    -> Routes(路由) # 匹配Url规则
+		-> Middleware(中间件过滤器) # 过滤(权限, 参数)
+			-> Controllers(控制器) # 处理事务, 提交行为请求
+				-> Repositories(行为) # 处理行为请求数据
+					-> Models(数据模型) # 调用数据模型, 返回请求数据
+			
+				<- Repositories(行为)
+			<- Controllers(控制器)
+		<- View(模板视图)
+	<- 渲染
+<- Browser
